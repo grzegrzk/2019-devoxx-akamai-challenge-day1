@@ -1,6 +1,6 @@
 public class Solution2 {
     public static void main(String[] args) {
-        new Solution2().sumOfAscii(args[1]);
+        System.out.println(new Solution2().sumOfAscii(args[0]));
     }
 
     public long sumOfAscii(String arg) {
