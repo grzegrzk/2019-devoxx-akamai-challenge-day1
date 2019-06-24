@@ -1,6 +1,6 @@
 public class Solution3 {
     public static void main(String[] args) {
-        System.out.println(new Solution3().nthFibonacci(Long.parseLong(args[0])));
+        System.out.print(new Solution3().nthFibonacci(Long.parseLong(args[0])));
     }
 
     public long nthFibonacci(long n) {
