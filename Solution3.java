@@ -4,7 +4,7 @@ public class Solution3 {
     }
 
     public long nthFibonacci(long n) {
-        long prev1 = 0;
+        long prev1 = 1;
         long cur = 1;
         if (n == 0) {
             return prev1;
