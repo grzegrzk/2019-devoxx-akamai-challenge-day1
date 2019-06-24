@@ -1,16 +1,21 @@
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.StringReader;
 
 public class Solution1 {
     public static void main(String[] args) throws IOException {
         Solution1 s1 = new Solution1();
-        try (Reader fr = new FileReader(args[0])) {
-            System.out.println(
-                    s1.palindromesCount(fr)
-            );
-        }
+//        try (Reader fr = new FileReader(args[0])) {
+//            System.out.println(
+//                    s1.palindromesCount(fr)
+//            );
+//        }
+
+        System.out.println(
+                s1.palindromesCount(new StringReader(args[0]))
+        );
+
     }
 
     public long palindromesCount(Reader reader) throws IOException {
