@@ -4,15 +4,15 @@ public class Solution3 {
     }
 
     public long nthFibonacci(int n) {
-        long prev1 = 1;
+        long prev1 = 0;
         long cur = 1;
-        if (n == 1) {
+        if (n == 0) {
             return prev1;
         }
-        if (n == 2) {
+        if (n == 1) {
             return cur;
         }
-        for (int i = 3; i <= n; ++i) {
+        for (int i = 2; i <= n; ++i) {
             long temp = prev1;
             prev1 = cur;
             cur = prev1 + temp;
