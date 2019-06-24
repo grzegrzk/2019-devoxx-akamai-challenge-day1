@@ -1,9 +1,9 @@
 public class Solution3 {
     public static void main(String[] args) {
-        System.out.println(new Solution3().nthFibonacci(Integer.parseInt(args[0])));
+        System.out.println(new Solution3().nthFibonacci(Long.parseLong(args[0])));
     }
 
-    public long nthFibonacci(int n) {
+    public long nthFibonacci(long n) {
         long prev1 = 0;
         long cur = 1;
         if (n == 0) {
