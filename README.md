@@ -60,3 +60,37 @@ Note - assume 1st element is "1".
 ## Assignment 5 - hard
 Write program that returns n-th [Vampire Number](https://en.wikipedia.org/wiki/Vampire_number).
 
+# 2nd Day Assignments
+
+## Assignment 6 - hard
+Write a program that for given number N prints result of XORing elements of the set [7, N] as decimal integer.
+
+### Input: 
+    * N - integer number [7, 1000000000000000000000]
+
+### Example outputs:
+    for n = 7, program should print 7
+    for n = 10, program should print decimal result of the following operation: 7 XOR 8 XOR 9 XOR 10
+
+## Assignment 7 - easy
+
+Write a program that counts strings separated by comma (,) in given string. It should be noted, that
+comma (,) can be escaped by slash (/) i.e. (/,) and double slash (//) represents slash.
+
+### Input:
+    * string
+    
+#### Example outputs:
+    for string "a,b/,c" should print 2
+    for string "a//b" should print 1
+
+## Assigment 8 - easy
+Write a program that for given number N counts number of bits set to 1 in the range [0, N] where numbers
+are represented as strings.
+
+### Input: 
+    * N - integer number [0, 2^31]
+    
+### Example output:
+    for N = 1 should print 5
+    for N = 2 should print 8

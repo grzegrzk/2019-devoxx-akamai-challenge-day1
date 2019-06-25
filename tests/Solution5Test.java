@@ -15,7 +15,7 @@ public class Solution5Test {
     }
 
     @Test
-    public void testNth(){
+    public void testNth() {
         Solution5 s5 = new Solution5();
 
         assertThat(s5.nthVampireNumber(1)).isEqualTo(1260);
@@ -26,5 +26,18 @@ public class Solution5Test {
         assertThat(s5.nthVampireNumber(6)).isEqualTo(2187);
         assertThat(s5.nthVampireNumber(7)).isEqualTo(6880);
         assertThat(s5.nthVampireNumber(8)).isEqualTo(102510);
+    }
+
+
+    @Test
+    public void testNthBig() {
+        Solution5 s5 = new Solution5();
+
+        long curCandidate = 0;
+        for (int i = 0; i < 300; ++i) {
+            long newResult = s5.findVampireNumberNotSmallerThan(curCandidate + 1);
+            System.out.println(String.format("%s: %s", i, newResult));
+            curCandidate = newResult;
+        }
     }
 }
